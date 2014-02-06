@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General strings -->
+    <string name="app_name">ExerciseApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <!-- Settings strings -->
+
+    <string name="automatic">Automatic run upload?</string>
+    <string name="autobutton">On</string>
+    <string name="username">Enter username: </string>
+    <string name="save">Save</string>
+
+    <!-- Main menu strings -->
+
+    <string-array name="main_menu_options">
+        <item>Start Running</item>
+        <item>Social</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!-- Exercise strings -->
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_previous_runs">PreviousRunsActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_summarize">SummarizeActivity</string>
+
+    <!-- Summary strings -->
+
+    <string name="distancelabel">Run distance (M): </string>
+    <string name="runlengthlabel">Run Time (mins): </string>
+    <string name="averagespeedlabel">Average speed (M/s): </string>
+    <string name="maximumspeedlabel">Maximum speed (M/s): </string>
+    <string name="empty"></string>
+    <string name="title_activity_social_runs">SocialRuns</string>
+    
+    <!-- Social runs strings -->
+    
+    <string name="fetch">Fetch</string>
+    <string name="username">Username</string>
+    <string name="enter">Enter username</string>
+
+</resources>

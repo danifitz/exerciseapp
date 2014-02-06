@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.ac.brookes.danielf.exerciseapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="uk.ac.brookes.danielf.exerciseapp.activities.ExerciseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="uk.ac.brookes.danielf.exerciseapp.activities.MenuActivity"
+            android:label="@string/title_activity_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="uk.ac.brookes.danielf.exerciseapp.activities.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="uk.ac.brookes.danielf.exerciseapp.MapActivity"
+            android:label="@string/title_activity_map"
+            android:parentActivityName="android.support.v4.app.FragmentActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.support.v4.app.FragmentActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA-XxK4eeDF8TRbkT65QfC9L2YEVjqFZaE" />
+
+        <activity
+            android:name="uk.ac.brookes.danielf.exerciseapp.activities.SummarizeActivity"
+            android:label="@string/title_activity_summarize" >
+        </activity>
+        <activity
+            android:name="uk.ac.brookes.danielf.exerciseapp.activities.SocialRuns"
+            android:label="@string/title_activity_social_runs" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SummarizeActivity" >
+
+    <TextView
+        android:id="@+id/distancelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/distancelabel" />
+
+    <TextView
+        android:id="@+id/runlengthlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/distancelabel"
+        android:layout_below="@+id/distancelabel"
+        android:layout_marginTop="36dp"
+        android:text="@string/runlengthlabel" />
+
+    <TextView
+        android:id="@+id/averagespeedlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/runlengthlabel"
+        android:layout_below="@+id/runlengthlabel"
+        android:layout_marginTop="42dp"
+        android:text="@string/averagespeedlabel" />
+
+    <TextView
+        android:id="@+id/maximumspeedlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/averagespeedlabel"
+        android:layout_centerVertical="true"
+        android:text="@string/maximumspeedlabel" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/distancelabel"
+        android:layout_alignBottom="@+id/distancelabel"
+        android:layout_marginLeft="77dp"
+        android:layout_toRightOf="@+id/distancelabel"
+        android:text="@string/empty" />
+
+    <TextView
+        android:id="@+id/runlength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/runlengthlabel"
+        android:layout_alignBottom="@+id/runlengthlabel"
+        android:layout_alignRight="@+id/distance"
+        android:text="@string/empty" />
+
+    <TextView
+        android:id="@+id/averagespeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/averagespeedlabel"
+        android:layout_alignBottom="@+id/averagespeedlabel"
+        android:layout_alignLeft="@+id/runlength"
+        android:text="@string/empty" />
+
+    <TextView
+        android:id="@+id/maximumspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/maximumspeedlabel"
+        android:layout_alignBottom="@+id/maximumspeedlabel"
+        android:layout_alignLeft="@+id/averagespeed"
+        android:text="@string/empty" />
+
+</RelativeLayout>
